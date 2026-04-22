@@ -21,26 +21,6 @@ find $SITE -name '*.pyc' -delete
 
 ### 2. Initialise easyunfold
 
-### Load python --- easley
-```bash
-module purge
-module load python/3.13.5-ajzf
-
-source ~/scratch-easley/codes/python/suryab/bin/activate
-
-```
-
-### Load python --- hopper
-```bash
-module purge
-module load gcc/12.1.0-crtl
-module load python/3.13.2-tvzw
-
-source ~/codes/suryab/bin/activate
-
-```
-
-
 Generate the `easyunfold.json` configuration and the supercell k-points file (`KPOINTS`).  
 You will need POSCAR files for both your primitive cell and supercell, along with a high-symmetry k-path text file.
 
